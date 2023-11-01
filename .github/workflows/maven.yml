@@ -17,7 +17,7 @@ on:
 jobs:
   build:
 
-    runs-on: buntu-latest
+    runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v3
@@ -28,7 +28,7 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
-      run: mvn -B package --file pom.xml
+      run: mvnm -B package --file pom.xml
       if: success()
             
   test:
