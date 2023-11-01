@@ -22,7 +22,6 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Set up JDK 17
-      continue-on-error: false
       uses: actions/setup-java@v3
       with:
         java-version: '17'
@@ -30,7 +29,7 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: mvnm -B package --file pom.xml
-      
+      continue-on-error: false
             
   test:
   
