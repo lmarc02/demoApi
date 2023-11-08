@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class MyUnitTest {
     @Test
     public void myUnitTest(){
-        String result = "onetwo";
+        String result = "onetwo1";
         assertEquals("onetwo", result,"My unit test failed");
         System.out.println("test run");
     }
